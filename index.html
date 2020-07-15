@@ -1,18 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/4cb37a761b.css" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./images//apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./images//apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./images//apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images//apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./images/apple-icon-144x144.png"
+    />
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images//apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images//android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./images//favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robert Stepanov Portfolio</title>
-    <link rel="stylesheet" href="./sass/main.css">
-</head>
-<body>
-    <header class="nav"></header>
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <header class="nav-container">
+      <div class="logo">
+        <img src="./images/navlogo.svg" alt="logo" class="logo" />
+      </div>
+      <div class="nav">
+        <h4><a href="#home">Home</a></h4>
+        <h4><a href="#about">About/Skills</a></h4>
+        <h4><a href="#projects">My Work</a></h4>
+        <h4><a href="#">Contact</a></h4>
+      </div>
+    </header>
     <section class="landing">
-        <h1 class="title">Robert Stepanov</h1>
-        <h2 class="subtitle">Full Stack Web Developer</h2>
-        <h3 class="welcome">Welcome to my Portfolio</h3>
-        <button class="cta">Check me out</button>
+      <div class="hero-image"></div>
+      <div class="main-heading">
+        <h1 class="title">Welcome to my Portfolio</h1>
+        <p>
+          Hello, my name is Robert Stepanov and I'm on the road to Web
+          Development success.
+        </p>
+        <button class="cta">View my work</button>
+        <div class="social-icons">
+            <i class="fab fa-github-square"></i>
+            <i class="fab fa-linkedin"></i>
+          <i class="fas fa-file-pdf pdf"></i>
+        </div>
+      </div>
     </section>
-</body>
+    <section class="about" id="about">
+      <div class="about-container">
+        <h2 class="about-title">Who I Am</h2>
+        <p class="about-info">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+          cupiditate explicabo maiores quam sit, repudiandae ut blanditiis
+          incidunt aliquid harum.
+        </p>
+        <h2 class="about-title">What I Do</h2>
+        <p class="about-info">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+          cupiditate explicabo maiores quam sit, repudiandae ut blanditiis
+          incidunt aliquid harum.
+        </p>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="project-title">Projects</h2>
+    </section>
+    <footer>
+      <p>&copy; Robert Stepanov</p>
+    </footer>
+  </body>
 </html>

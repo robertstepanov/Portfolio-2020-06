@@ -5,18 +5,148 @@
           box-sizing: border-box;
 }
 
-.landing {
-  height: 100vh;
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 30px 0 30px;
+  height: 75px;
+}
+
+.nav-container .logo {
+  height: 50px;
+  z-index: 2;
+}
+
+.nav-container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 2;
+}
+
+.nav-container .nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+.nav-container .nav a:hover {
+  border-bottom: 2px solid #434cc7;
+}
+
+.landing {
+  height: 100vh;
+  width: 100%;
+}
+
+.landing .hero-image {
+  background-image: url("../images/road.png");
+  height: 100vh;
+  width: 1920px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -75px;
+  position: relative;
+}
+
+.landing .main-heading {
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.landing .main-heading .title {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.landing .main-heading button {
+  background: #434cc7;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  margin-top: 15px;
+  border-radius: 3px;
+}
+
+.landing .main-heading button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #434cc7;
+  border: 1px solid #434cc7;
+}
+
+.landing .main-heading p {
+  line-height: 1.8;
+}
+
+.landing .main-heading .social-icons {
+  margin-top: 30px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .main-heading i {
+  font-size: 2em;
+  color: #000;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: lightcoral;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: lightsalmon;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

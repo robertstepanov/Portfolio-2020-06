@@ -1,14 +1,120 @@
+@import './variables';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.landing {
-    height: 100vh;
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    height: 75px;;
+    .logo {
+        height: 50px;
+        z-index: 2;;
+    }
+    .nav {
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        z-index: 2;
+    }
+    .nav a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1em;
+        font-weight: lighter;
+        &:hover {
+            border-bottom: 2px solid $buttonColor;
+            
+        }
+    }
+}
+.landing {
+    height: 100vh;
+    width: 100%;
+
+    .hero-image {
+        background-image: url("../images/road.png");
+        height: 100vh;
+        width: 1920px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-size: 175% 175%; for mobile width 100%
+        margin-top: -75px;
+        position: relative;
+        
+    }
+    .main-heading {
+        width: 30%;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    
+        .title {
+            font-size: 3rem;
+            font-family: 'Roboto', sans-serif;
+        }
+        button {
+            background: $buttonColor;
+            color: #fff;
+            padding: 10px 25px;
+            border: none;
+            margin-top: 15px;
+            border-radius: 3px;
+            &:hover {
+                cursor: pointer;
+                background: #fff;
+                color: $buttonColor;
+                border: 1px solid $buttonColor;
+            }
+        }
+        p {
+            line-height: 1.8;
+        }
+        .social-icons {
+            margin-top: 30px;
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+       
+        i {
+            font-size: 2em;
+            color: #000;
+        }
+    }
+   
+}
+
+
+.about {
+    display: flex;
     flex-direction: column;
-   justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightcoral;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightsalmon;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
 
