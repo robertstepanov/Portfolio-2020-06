@@ -1,0 +1,110 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    
+    .logo {
+        width: 50%;
+        height: 50px;
+        z-index: 2;;
+    }
+    .nav {
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        z-index: 2;
+    }
+    .nav a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1em;
+        font-weight: lighter;
+        &:hover {
+            border-bottom: 2px solid $buttonColor;
+            
+        }
+    
+    }
+}
+.landing {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    .hero-image {
+        background-image: url("../images/road.png");
+        // background-image: url("../images/road_1920x1080.png");
+        height: 100vh;
+        width: 120%;
+        // width: 1920px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        // background-size: 175% 175%; for mobile width 100%
+        margin-top: -75px;
+        position: relative;
+        
+    }
+    .main-heading {
+        width: 30%;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    
+        .title {
+            font-size: 3rem;
+            font-family: 'Roboto', sans-serif;
+        }
+        .cta-btn {
+            width: 40%;
+            text-decoration: none;;
+            text-align: center;
+            background: $buttonColor;
+            color: #fff;
+            padding: 10px 25px;
+            border: none;
+           
+            border-radius: 3px;
+            &:hover {
+                background: #fff;
+                color: $buttonColor;
+                outline: 1px solid $buttonColor;
+                box-shadow: 0 0 0 1pt $buttonColor;
+            }
+            // a {
+            //     color: #fff;
+            //     text-decoration: none;
+            //     &:hover {
+            //         color: $buttonColor;
+            //     }
+            // }
+        }
+        p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .social-icons {
+            margin-top: 30px;
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i {
+                font-size: 2em;
+                color: #000;
+                &:hover {
+                    color: $buttonColor;
+                }
+            }
+        }
+       
+    }
+   
+}

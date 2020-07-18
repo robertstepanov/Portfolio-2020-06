@@ -1,0 +1,22 @@
+.contact {
+    height: 100vh;
+    background: #f3f2f0;
+
+    .form-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        .contact-title {
+            padding-top: 10%;
+        }
+    }
+
+    form {
+        width: 70%;
+        margin: 5% auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

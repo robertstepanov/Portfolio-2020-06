@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,9 +22,16 @@ body {
           justify-content: space-between;
   padding: 0 30px 0 30px;
   height: 75px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #fff;
 }
 
 .nav-container .logo {
+  width: 50%;
   height: 50px;
   z-index: 2;
 }
@@ -53,15 +61,16 @@ body {
 .landing {
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .landing .hero-image {
   background-image: url("../images/road.png");
   height: 100vh;
-  width: 1920px;
+  width: 120%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   margin-top: -75px;
   position: relative;
 }
@@ -78,24 +87,28 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.landing .main-heading button {
+.landing .main-heading .cta-btn {
+  width: 40%;
+  text-decoration: none;
+  text-align: center;
   background: #434cc7;
   color: #fff;
   padding: 10px 25px;
   border: none;
-  margin-top: 15px;
   border-radius: 3px;
 }
 
-.landing .main-heading button:hover {
-  cursor: pointer;
+.landing .main-heading .cta-btn:hover {
   background: #fff;
   color: #434cc7;
-  border: 1px solid #434cc7;
+  outline: 1px solid #434cc7;
+  -webkit-box-shadow: 0 0 0 1pt #434cc7;
+          box-shadow: 0 0 0 1pt #434cc7;
 }
 
 .landing .main-heading p {
   line-height: 1.8;
+  margin-bottom: 20px;
 }
 
 .landing .main-heading .social-icons {
@@ -112,12 +125,67 @@ body {
           align-items: center;
 }
 
-.landing .main-heading i {
+.landing .main-heading .social-icons i {
   font-size: 2em;
   color: #000;
 }
 
+.landing .main-heading .social-icons i:hover {
+  color: #434cc7;
+}
+
 .about {
+  height: 100vh;
+  background: #f3f2f0;
+}
+
+.about .about-title {
+  padding-top: 10%;
+  margin-left: 10%;
+}
+
+.about .about-container {
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.about .about-info {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.about .about-info p {
+  padding: 0 15%;
+  line-height: 1.8;
+}
+
+.about .skills-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about .skills-container .skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-self: flex-start;
+  padding-right: 70px;
+}
+
+.about .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,30 +193,126 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  background-color: lightcoral;
+  margin: 0 auto 50% auto;
+  padding: 0 30px;
+}
+
+.about .icon-container .skill-icon {
+  font-size: 3em;
 }
 
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
+  background-color: #fff;
+}
+
+.projects .projects-title {
+  padding-top: 10%;
+  margin-left: 9%;
+}
+
+.projects .seperator {
+  width: 78%;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+}
+
+.projects .project-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 4% auto;
+}
+
+.projects .project-group:nth-child(3) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.projects .project-group img {
+  width: 500px;
+}
+
+.projects .project-group .tech {
+  font-weight: 700;
+}
+
+.projects .project-group .project-info {
+  width: 500px;
+  line-height: 1.4;
+}
+
+.projects .project-group .social-icons {
+  margin-top: 2%;
+}
+
+.projects .project-group .social-icons i {
+  font-size: 2em;
+  color: #2a2a2a;
+  padding-right: 25px;
+}
+
+.projects .project-group .social-icons i:hover {
+  color: #434cc7;
+}
+
+.contact {
   height: 100vh;
-  background-color: lightsalmon;
+  background: #f3f2f0;
+}
+
+.contact .form-container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .form-container .contact-title {
+  padding-top: 10%;
+}
+
+.contact form {
+  width: 70%;
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2a2a2a;
 }
 /*# sourceMappingURL=main.css.map */

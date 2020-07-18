@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/4cb37a761b.css" /> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -81,11 +84,11 @@
       <div class="nav">
         <h4><a href="#home">Home</a></h4>
         <h4><a href="#about">About/Skills</a></h4>
-        <h4><a href="#projects">My Work</a></h4>
-        <h4><a href="#">Contact</a></h4>
+        <h4><a href="#work">My Work</a></h4>
+        <h4><a href="#contact">Contact</a></h4>
       </div>
     </header>
-    <section class="landing">
+    <section class="landing" id="home">
       <div class="hero-image"></div>
       <div class="main-heading">
         <h1 class="title">Welcome to my Portfolio</h1>
@@ -93,32 +96,157 @@
           Hello, my name is Robert Stepanov and I'm on the road to Web
           Development success.
         </p>
-        <button class="cta">View my work</button>
+        <!-- <div class="cta-btn"> -->
+        <a href="#work" class="cta-btn">View my work</a>
+        <!-- </div> -->
         <div class="social-icons">
-            <i class="fab fa-github-square"></i>
-            <i class="fab fa-linkedin"></i>
-          <i class="fas fa-file-pdf pdf"></i>
+          <a href="https://github.com/robertstepanov" target="_blank"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/robert-stepanov-7b7739aa/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="./assets//Resume.pdf" target="_blank"
+            ><i class="fas fa-file-pdf pdf"></i
+          ></a>
         </div>
       </div>
     </section>
     <section class="about" id="about">
+      <h2 class="about-title">Who I Am</h2>
       <div class="about-container">
-        <h2 class="about-title">Who I Am</h2>
-        <p class="about-info">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-          cupiditate explicabo maiores quam sit, repudiandae ut blanditiis
-          incidunt aliquid harum.
-        </p>
-        <h2 class="about-title">What I Do</h2>
-        <p class="about-info">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-          cupiditate explicabo maiores quam sit, repudiandae ut blanditiis
-          incidunt aliquid harum.
+        
+        <div class='about-info'>
+        <p>
+          Hey there, my name is Robert and I'm a native of the Tampa Bay/St.
+          Pete area of the west coast of Florida. After pursuing a minor degree
+          in Biology and with the intention of completing a major in
+          Environmental Science, I decided it wasn't for me. I enjoy the field,
+          but decided I missed the more artistic and creative side of my
+          personality and opted to embark on a new journey. So here I am, a new
+          graduate again, with a Web Design and Development degree and a passion
+          to put it to use. I have always had an interest and ability in drawing
+          and art in general and combined with my love of technology it seemed
+          natural to follow it in this direction. The immediate gratification of
+          seeing something coded and come to fruition is such a fulfilling
+          feeling. My goal is to use my innate imagination and creativity to
+          build things to share with everyone. I sincerely hope that the things
+          I create bring as much pleasure to my clients as the joy and
+          fulfillment it brings to myself.
         </p>
       </div>
+        <div class="skills-container">
+          <div class="skills">
+          <div class="icon-container">
+            <icon alt="html5 logo" class="fab fa-html5 skill-icon"></icon>
+            <p>HTML5</p>
+          </div>
+          <div class="icon-container">
+            <icon alt="css3 logo" class="fab fa-css3-alt skill-icon"></icon>
+            <p>CSS3</p>
+          </div>
+          <div class="icon-container">
+            <icon alt="javascript logo" class="fab fa-js skill-icon"></icon>
+            <p>Javascript</p>
+          </div>
+          <div class="icon-container">
+            <icon alt="sass logo" class="fab fa-sass skill-icon"></icon>
+            <p>Sass</p>
+          </div>
+          <div class="icon-container">
+            <icon alt="react logo" class="fab fa-react skill-icon"></icon>
+            <p>ReactJS</p>
+          </div>
+          <div class="icon-container">
+            <icon alt="python logo" class="fab fa-python skill-icon"></icon>
+            <p>Python</p>
+          </div>
+          <div class="icon-container">
+            <icon alt="node logo" class="fab fa-node-js skill-icon"></icon>
+            <p>NodeJS</p>
+          </div>
+          </div>  
+        </div>
+      </div>
+    </div>
     </section>
-    <section class="projects" id="projects">
-      <h2 class="project-title">Projects</h2>
+    <section class="projects" id="work">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-group">
+          <img class='project-img' src="./images/ebs.jpg" alt="ebs website" >
+          <div class="project-info">
+            <h2 class="project-title">EBS and Sons Pest Control</h2>
+            <h3 class="tech">HTML, CSS, PHP</h3>
+            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptate commodi porro consequuntur? Ut maxime quos corporis architecto quisquam eaque cum sunt itaque consectetur dolorum, quas eius similique voluptatum dolorem.</p>
+            <div class="social-icons">
+              <a href="https://github.com/robertstepanov" target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+              <a
+                href="https://ebs-pestcontrol.netlify.app/"
+                target="_blank"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="seperator"></div>
+        <div class="project-group">
+          <img class='project-img' src="./images/key.jpg" alt="key conservation website" >
+          <div class="project-info">
+            <h2 class="project-title">Key Conservation</h2>
+            <h3 class="tech">React Native, NodeJS</h3>
+            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptate commodi porro consequuntur? Ut maxime quos corporis architecto quisquam eaque cum sunt itaque consectetur dolorum, quas eius similique voluptatum dolorem.</p>
+            <div class="social-icons">
+              <a href="https://github.com/robertstepanov" target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+              <a
+                href="https://ebs-pestcontrol.netlify.app/"
+                target="_blank"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="seperator"></div>
+        <div class="project-group">
+          <img class='project-img' src="./images/GOL.jpg" alt="game of life website" >
+          <div class="project-info">
+            <h2 class="project-title">Conway's Game of Life</h2>
+            <h3 class="tech">React, StyledComponents</h3>
+            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptate commodi porro consequuntur? Ut maxime quos corporis architecto quisquam eaque cum sunt itaque consectetur dolorum, quas eius similique voluptatum dolorem.</p>
+            <div class="social-icons">
+              <a href="https://github.com/robertstepanov" target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+              <a
+                href="https://ebs-pestcontrol.netlify.app/"
+                target="_blank"
+                ><i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="form-container">
+        <h2 class="contact-title">Contact Me</h2>
+        <form action="mail.php" method="POST">
+          <input type="text" name="name" placeholder="John Doe">
+          <input type="text" name="email" placeholder="JohnDoe@gmail.com">
+          <textarea type="text" name="message" rows="6" cols="25" placeholder="Message">
+            
+          </textarea>
+          <input type="submit" value="Send">
+          <input type="reset" value="Clear">
+        </form>
+      </div>
     </section>
     <footer>
       <p>&copy; Robert Stepanov</p>
