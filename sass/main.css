@@ -213,17 +213,38 @@ body {
           justify-content: center;
   height: 100%;
   background-color: #fff;
+  padding-bottom: 3%;
 }
 
 .projects .projects-title {
-  padding-top: 10%;
+  padding-top: 7%;
   margin-left: 9%;
 }
 
 .projects .seperator {
-  width: 78%;
+  width: 83%;
   margin: 0 auto;
   border-bottom: 1px solid #000;
+}
+
+.projects .work-btn {
+  width: 40%;
+  text-decoration: none;
+  text-align: center;
+  background: #434cc7;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  margin-left: 8.5%;
+  border-radius: 3px;
+}
+
+.projects .work-btn:hover {
+  background: #fff;
+  color: #434cc7;
+  outline: 1px solid #434cc7;
+  -webkit-box-shadow: 0 0 0 1pt #434cc7;
+          box-shadow: 0 0 0 1pt #434cc7;
 }
 
 .projects .project-group {
