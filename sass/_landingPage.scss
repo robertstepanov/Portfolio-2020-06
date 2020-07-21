@@ -44,13 +44,15 @@
     overflow: hidden;
 
     .hero-image {
-        background-image: url("../images/road.png");
+        background-image: url("../images/road_1920x1080.png");
         // background-image: url("../images/road_1920x1080.png");
         height: 100vh;
         width: 120%;
         // width: 1920px;
+        // background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        // background-size: cover;
         background-size: 100% auto;
         // background-size: 175% 175%; for mobile width 100%
         margin-top: -75px;

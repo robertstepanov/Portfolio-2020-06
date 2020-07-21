@@ -65,7 +65,7 @@ body {
 }
 
 .landing .hero-image {
-  background-image: url("../images/road.png");
+  background-image: url("../images/road_1920x1080.png");
   height: 100vh;
   width: 120%;
   background-position: center;
@@ -355,6 +355,7 @@ body {
   width: 100%;
   padding: 2% 1%;
   font-family: 'Raleway', sans-serif;
+  resize: none;
 }
 
 .contact .form-container form .submit-btn {
