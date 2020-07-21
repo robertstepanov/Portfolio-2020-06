@@ -2,15 +2,28 @@
     height: 100vh;
     background: #f3f2f0;
     
-    .about-title {
-        padding-top:10%;
-        margin-left: 10%;
+    // .about-title {
+    //     padding-top:10%;
+    //     margin-left: 10%;
+    // }
+    //  &::before {
+    //      display: block;
+    //      content: " ";
+    //      margin-top: -23vh;
+    //      visibility: hidden;
+    //  }
+
+
+    .title {
+        height: 25vh;
+        display: flex;
+        align-items: flex-end;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .about-container {
-       
-        
-        margin: 5% auto;
+        margin: 5% auto 5% auto;
         display: flex;
         // justify-content: space-around;
         // align-items: flex-start;

@@ -59,7 +59,7 @@ body {
 }
 
 .landing {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -134,18 +134,31 @@ body {
   color: #434cc7;
 }
 
+.nav h4 a.current {
+  background: #434cc7;
+  color: #fff;
+  padding: 5px 15px;
+}
+
 .about {
   height: 100vh;
   background: #f3f2f0;
 }
 
-.about .about-title {
-  padding-top: 10%;
-  margin-left: 10%;
+.about .title {
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .about .about-container {
-  margin: 5% auto;
+  margin: 5% auto 5% auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,15 +240,25 @@ body {
   border-bottom: 1px solid #000;
 }
 
+.projects .work-btn-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
 .projects .work-btn {
-  width: 40%;
+  width: 10%;
   text-decoration: none;
   text-align: center;
   background: #434cc7;
   color: #fff;
   padding: 10px 25px;
   border: none;
-  margin-left: 8.5%;
   border-radius: 3px;
 }
 
@@ -293,10 +316,11 @@ body {
 .contact {
   height: 100vh;
   background: #f3f2f0;
+  overflow: hidden;
 }
 
 .contact .form-container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,10 +332,11 @@ body {
 }
 
 .contact .form-container .contact-title {
-  padding-top: 10%;
+  padding-top: 15%;
+  text-align: center;
 }
 
-.contact form {
+.contact .form-container form {
   width: 70%;
   margin: 5% auto;
   display: -webkit-box;
@@ -321,6 +346,31 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #fff;
+  padding: 3%;
+}
+
+.contact .form-container form input, .contact .form-container form textarea {
+  margin: 2% auto;
+  width: 100%;
+  padding: 2% 1%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact .form-container form .submit-btn {
+  background: #434cc7;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.contact .form-container form .submit-btn:hover {
+  background: #fff;
+  color: #434cc7;
+  outline: 1px solid #434cc7;
+  -webkit-box-shadow: 0 0 0 1pt #434cc7;
+          box-shadow: 0 0 0 1pt #434cc7;
 }
 
 footer {
@@ -328,6 +378,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -335,5 +389,33 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   color: #2a2a2a;
+  padding-top: 60px;
+}
+
+footer p {
+  padding-bottom: 20px;
+}
+
+footer .social-icons {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+footer .social-icons i {
+  font-size: 2em;
+  color: #000;
+}
+
+footer .social-icons i:hover {
+  color: #434cc7;
 }
 /*# sourceMappingURL=main.css.map */

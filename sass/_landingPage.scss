@@ -9,6 +9,7 @@
     left: 0;
     z-index: 1;
     background: #fff;
+    // visibility: hidden;
     
     .logo {
         width: 50%;
@@ -30,11 +31,15 @@
             border-bottom: 2px solid $buttonColor;
             
         }
+
+        // .nav h4 a.current {
+        //     background: blue;
+        // }
     
     }
 }
 .landing {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow: hidden;
 
@@ -107,4 +112,10 @@
        
     }
    
+}
+
+.nav h4 a.current {
+    background: $buttonColor;
+    color: #fff;
+    padding: 5px 15px;
 }

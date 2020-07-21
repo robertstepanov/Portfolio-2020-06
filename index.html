@@ -82,12 +82,12 @@
       <div class="logo">
         <img src="./images/navlogo.svg" alt="logo" class="logo" />
       </div>
-      <div class="nav">
+      <nav class="nav">
         <h4><a href="#home">Home</a></h4>
         <h4><a href="#about">About/Skills</a></h4>
         <h4><a href="#work">My Work</a></h4>
         <h4><a href="#contact">Contact</a></h4>
-      </div>
+      </nav>
     </header>
     <section class="landing" id="home">
       <div class="hero-image"></div>
@@ -116,7 +116,7 @@
       </div>
     </section>
     <section class="about" id="about">
-      <h2 class="about-title">Who I Am</h2>
+      <div class='title'><h2 class="about-title">Who I Am</h2></div>
       <div class="about-container">
         
         <div class='about-info'>
@@ -170,6 +170,7 @@
           </div>
           </div>  
         </div>
+      </div>
       </div>
     </div>
     </section>
@@ -234,7 +235,7 @@
           </div>
         </div>
       </div>
-      <a href="projects.html" class="work-btn">View More</a>
+      <div class='work-btn-container'><a href="projects.html" class="work-btn">View More</a></div>  
     </section>
     <section class="contact" id="contact">
       <div class="form-container">
@@ -242,16 +243,28 @@
         <form action="mail.php" method="POST">
           <input type="text" name="name" placeholder="John Doe">
           <input type="text" name="email" placeholder="JohnDoe@gmail.com">
-          <textarea type="text" name="message" rows="6" cols="25" placeholder="Message">
-            
-          </textarea>
-          <input type="submit" value="Send">
-          <input type="reset" value="Clear">
+          <textarea type="text" name="message" rows="6" cols="25" placeholder="Message"></textarea>
+          <input class='submit-btn' type="submit" value="Send">
+          <!-- <input type="reset" value="Clear"> -->
         </form>
       </div>
     </section>
     <footer>
+      <div class="social-icons">
+        <a href="https://github.com/robertstepanov" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/robert-stepanov-7b7739aa/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="./assets//Resume.pdf" target="_blank"
+          ><i class="fas fa-file-pdf pdf"></i
+        ></a>
+      </div>
       <p>&copy; Robert Stepanov</p>
     </footer>
+    <script src="js/main.js"</script></script>
   </body>
 </html>

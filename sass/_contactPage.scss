@@ -1,22 +1,51 @@
 .contact {
     height: 100vh;
     background: #f3f2f0;
+    overflow: hidden;
 
     .form-container {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+        
 
         .contact-title {
-            padding-top: 10%;
+            padding-top: 15%;
+            text-align: center;
+        }
+
+        form {
+            width: 70%;
+            margin: 5% auto;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            padding: 3%;
+
+            input, textarea {
+                margin: 2% auto;
+                width: 100%;
+                padding: 2% 1%;
+                font-family: 'Raleway', sans-serif;
+            }
+
+            .submit-btn {
+                background: $buttonColor;
+                color: #fff;
+                text-transform: uppercase;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background: #fff;
+                    color: $buttonColor;
+                    outline: 1px solid $buttonColor;
+                    box-shadow: 0 0 0 1pt $buttonColor;
+                }
+            }
         }
     }
 
-    form {
-        width: 70%;
-        margin: 5% auto;
-        display: flex;
-        flex-direction: column;
-    }
+   
 }
