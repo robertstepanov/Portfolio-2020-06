@@ -1,28 +1,39 @@
 footer {
-    height: 10vh;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $icon-fontColor;
+  padding-top: 60px;
+
+  p {
+    padding-bottom: 20px;
+  }
+
+  .social-icons {
+    width: 20%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    color: $icon-fontColor;
-    padding-top: 60px;
-    
-    p {
-        padding-bottom: 20px;
+    padding: 20px 0;
+    i {
+      font-size: 2em;
+      color: #000;
+      &:hover {
+        color: $buttonColor;
+      }
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 812px) {
+    .social-icons {
+      width: 95%;
     }
 
-    .social-icons {
-        width: 20%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding:20px 0;
-        i {
-            font-size: 2em;
-            color: #000;
-            &:hover {
-                color: $buttonColor;
-            }
-        }
+    p {
+      width: 95%;
+      text-align: center;
     }
+  }
 }

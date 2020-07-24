@@ -1,123 +1,186 @@
 .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px 0 30px;
-    height: 75px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background: #fff;
-    // visibility: hidden;
-    
-    .logo {
-        width: 50%;
-        height: 50px;
-        z-index: 2;;
-    }
-    .nav {
-        display: flex;
-        width: 50%;
-        justify-content: space-evenly;
-        z-index: 2;
-    }
-    .nav a {
-        text-decoration: none;
-        color: #000;
-        font-size: 1.1em;
-        font-weight: lighter;
-        &:hover {
-            border-bottom: 2px solid $buttonColor;
-            
-        }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  height: 75px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #fff;
 
-        // .nav h4 a.current {
-        //     background: blue;
-        // }
-    
+  .logo {
+    width: 50%;
+    height: 50px;
+    z-index: 2;
+  }
+  .nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    z-index: 2;
+  }
+  .nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: lighter;
+    &:hover {
+      border-bottom: 2px solid $buttonColor;
     }
+  }
+  @media (min-width: 375px) and (max-width: 812px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+
+    .logo {
+      height: 75px;
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    .nav {
+      font-size: 0.8em;
+      width: 100%;
+    }
+  }
 }
 .landing {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .hero-image {
+    background-image: url('../images/road_1920x1080.png');
+    // background-image: url("../images/road_1920x1080.png");
+    height: 100vh;
+    width: 120%;
+    // width: 1920px;
+    // background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-size: 100% auto;
+    // background-size: 175% 175%; for mobile width 100%
+    margin-top: -75px;
+    position: relative;
+  }
+  .main-heading {
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+    .mobile-bg {
+      display: none;
+    }
+
+    .title {
+      font-size: 3rem;
+      font-family: 'Roboto', sans-serif;
+    }
+    .cta-btn {
+      width: 40%;
+      text-decoration: none;
+      text-align: center;
+      background: $buttonColor;
+      color: #fff;
+      padding: 10px 25px;
+      border: none;
+
+      border-radius: 3px;
+      &:hover {
+        background: #fff;
+        color: $buttonColor;
+        outline: 1px solid $buttonColor;
+        box-shadow: 0 0 0 1pt $buttonColor;
+      }
+    }
+    p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .social-icons {
+      margin-top: 30px;
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      i {
+        font-size: 2em;
+        color: $icon-fontColor;
+        &:hover {
+          color: $buttonColor;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 812px) {
+    margin: 0 auto;
 
     .hero-image {
-        background-image: url("../images/road_1920x1080.png");
-        // background-image: url("../images/road_1920x1080.png");
-        height: 100vh;
-        width: 120%;
-        // width: 1920px;
-        // background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        // background-size: cover;
-        background-size: 100% auto;
-        // background-size: 175% 175%; for mobile width 100%
-        margin-top: -75px;
-        position: relative;
-        
+      //   opacity: 0.5;
+      //   height: 100vh;
+      display: none;
+      height: 100%;
     }
+
     .main-heading {
-        width: 30%;
-        position: absolute;
-        top: 30%;
-        left: 10%;
-    
-        .title {
-            font-size: 3rem;
-            font-family: 'Roboto', sans-serif;
-        }
-        .cta-btn {
-            width: 40%;
-            text-decoration: none;;
-            text-align: center;
-            background: $buttonColor;
-            color: #fff;
-            padding: 10px 25px;
-            border: none;
-           
-            border-radius: 3px;
-            &:hover {
-                background: #fff;
-                color: $buttonColor;
-                outline: 1px solid $buttonColor;
-                box-shadow: 0 0 0 1pt $buttonColor;
-            }
-            // a {
-            //     color: #fff;
-            //     text-decoration: none;
-            //     &:hover {
-            //         color: $buttonColor;
-            //     }
-            // }
-        }
-        p {
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-        .social-icons {
-            margin-top: 30px;
-            width: 40%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            i {
-                font-size: 2em;
-                color: #000;
-                &:hover {
-                    color: $buttonColor;
-                }
-            }
-        }
-       
+      width: 95%;
+      margin: 10% auto;
+      //   top: 13%;
+      //   left: 2%;
+      position: static;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .mobile-bg {
+        margin-left: 20%;
+        height: 50%;
+        width: 100%;
+        display: inline-block;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        width: 95%;
+        margin: 10% auto;
+      }
+
+      .cta-btn {
+        width: 95%;
+        margin: 5% auto 10%;
+      }
     }
-   
+  }
 }
 
 .nav h4 a.current {
-    background: $buttonColor;
-    color: #fff;
-    padding: 5px 15px;
+  background: $buttonColor;
+  color: #fff;
+  padding: 5px 15px;
+
+  @media (min-width: 375px) and (max-width: 812px) {
+    background: none;
+    color: $icon-fontColor;
+    padding: 0;
+  }
+
 }
+// @media (min-width: 375px) and (max-width: 812px) {
+//   .nav h4 a.current {
+//     background: none;
+//     color: $icon-fontColor;
+//     padding: 0;
+  
+//   }
+// }
