@@ -1,112 +1,117 @@
 .projects {
+ 
+  height: 100%;
+  background-color: #fff;
+  padding-bottom: 3%;
+
+  .projects-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .projects-title {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10%;
+  }
+
+  .seperator {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+  }
+
+  .work-btn-container {
+    width: 100%;
+    display: flex;
     justify-content: center;
-    height: 100%;
-    background-color: #fff;
-    padding-bottom: 3%;
+    margin: 0 auto;
+  }
 
-    .projects-title {
-        padding-top: 7%;
-        margin-left: 9%;
+  .work-btn {
+    width: 10%;
+    text-decoration: none;
+    text-align: center;
+    background: $buttonColor;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    // margin-left: 8.5%;
+
+    border-radius: 3px;
+    &:hover {
+      background: #fff;
+      color: $buttonColor;
+      outline: 1px solid $buttonColor;
+      box-shadow: 0 0 0 1pt $buttonColor;
+    }
+  }
+
+  //  .projects-container {
+  //     .work-btn {
+  //         width: 40%;
+  //         text-decoration: none;;
+  //         text-align: center;
+  //         background: $buttonColor;
+  //         color: #fff;
+  //         padding: 10px 25px;
+  //         border: none;
+  //         margin-bottom: 30px;
+
+  //         border-radius: 3px;
+  //         &:hover {
+  //             background: #fff;
+  //             color: $buttonColor;
+  //             outline: 1px solid $buttonColor;
+  //             box-shadow: 0 0 0 1pt $buttonColor;
+  //         }
+  //  }
+  // }
+
+  // .projects-container {
+  //     display: flex;
+  //     flex-direction: column;
+  //     height: 100%;
+  //     justify-content: space-around;
+  // }
+
+  .project-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% auto;
+
+    &:nth-child(3) {
+      flex-direction: row-reverse;
     }
 
-    .seperator {
-        width: 83%;
-        margin: 0 auto;
-        border-bottom: 1px solid #000;
-     
-     }
+    img {
+      width: 700px;
+    }
 
-     .work-btn-container {
-         width: 100%;
-         display: flex;
-         justify-content: center;
-         margin: 0 auto;
-     }
+    .tech {
+      font-weight: 700;
+    }
 
-     .work-btn {
-        width: 10%;
-        text-decoration: none;
-        text-align: center;
-        background: $buttonColor;
-        color: #fff;
-        padding: 10px 25px;
-        border: none;
-        // margin-left: 8.5%;
-       
-        border-radius: 3px;
+    .project-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 500px;
+      line-height: 1.4;
+    }
+
+    .social-icons {
+      margin-top: 2%;
+
+      i {
+        font-size: 2em;
+        color: $icon-fontColor;
+        padding-right: 25px;
+
         &:hover {
-            background: #fff;
-            color: $buttonColor;
-            outline: 1px solid $buttonColor;
-            box-shadow: 0 0 0 1pt $buttonColor;
+          color: $buttonColor;
         }
- }
-
-    //  .projects-container {
-    //     .work-btn {
-    //         width: 40%;
-    //         text-decoration: none;;
-    //         text-align: center;
-    //         background: $buttonColor;
-    //         color: #fff;
-    //         padding: 10px 25px;
-    //         border: none;
-    //         margin-bottom: 30px;
-           
-    //         border-radius: 3px;
-    //         &:hover {
-    //             background: #fff;
-    //             color: $buttonColor;
-    //             outline: 1px solid $buttonColor;
-    //             box-shadow: 0 0 0 1pt $buttonColor;
-    //         }
-    //  }
-    // }
-
-    // .projects-container {
-    //     display: flex;
-    //     flex-direction: column;
-    //     height: 100%;
-    //     justify-content: space-around;
-    // }
-
-    .project-group {
-        
-        display: flex;
-        justify-content: space-around;
-        margin: 4% auto;
-
-        &:nth-child(3) {
-            flex-direction: row-reverse;
-        }
-
-        img {
-            width: 500px;
-        }
-
-        .tech {
-            font-weight: 700;
-        }
-
-        .project-info {
-            width: 500px;
-            line-height: 1.4;
-           
-        }
-
-        .social-icons {
-            margin-top: 2%;
-
-            i {
-                font-size: 2em;
-                color: $icon-fontColor;
-                padding-right: 25px;
-
-                &:hover {
-                    color: $buttonColor;
-                }
-            }
-        }
+      }
     }
+  }
 }
-
