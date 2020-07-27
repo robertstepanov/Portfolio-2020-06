@@ -1,6 +1,28 @@
 .about {
   height: 100%;
   background: #f3f2f0;
+  overflow: hidden;
+
+  #topBtn {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: $buttonColor;
+    color: var(--main-text-color);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.6;
+    z-index: 200;
+  }
+
+  #topBtn:hover {
+    background-color: #555;
+  }
 
   .about-title {
     width: 80%;
@@ -36,19 +58,20 @@
       justify-content: space-between;
       align-self: flex-start;
       padding-right: 70px;
-    }
-  }
-  .icon-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 50% auto;
-    padding: 0 30px;
 
-    .skill-icon {
-      font-size: 3em;
-      color: $icon-fontColor;
+      .icon-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 50% auto;
+        padding: 0 30px;
+
+        .skill-icon {
+          font-size: 3em;
+          color: $icon-fontColor;
+        }
+      }
     }
   }
 
@@ -58,14 +81,12 @@
       margin-bottom: 30px;
     }
 
-    
     .skills-container {
       .skills {
         align-self: center;
         padding-right: 0;
       }
     }
-    
 
     .about-container {
       flex-direction: column;

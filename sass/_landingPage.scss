@@ -9,6 +9,7 @@
   left: 0;
   z-index: 1;
   background: #fff;
+  overflow: hidden;
 
   .logo {
     width: 50%;
@@ -35,6 +36,7 @@
     align-items: center;
     justify-content: center;
     height: 120px;
+    position: relative;
 
     .logo {
       height: 75px;
@@ -122,25 +124,43 @@
   @media (min-width: 375px) and (max-width: 812px) {
     margin: 0 auto;
 
+    // .hero-image {
+    //   //   opacity: 0.5;
+    //   //   height: 100vh;
+    //   display: none;
+    //   height: 100%;
+    //   width: 100%;
+    //   overflow-x: hidden;
+    //   border: 2px solid black;
+    // }
+
     .hero-image {
-      //   opacity: 0.5;
-      //   height: 100vh;
-      display: none;
-      height: 100%;
+      // margin-top: -55%;
+      margin: -250px auto 0 auto;
+      display: flex;
+      width: 100%;
+      opacity: 0.5;
     }
 
     .main-heading {
-      width: 95%;
-      margin: 10% auto;
-      //   top: 13%;
-      //   left: 2%;
-      position: static;
       display: flex;
       flex-direction: column;
       align-items: center;
+      left: 0;
+      top: 27%;
+      width: 100%;
+      margin: 0 auto;
+      // width: 95%;
+      // margin: 10% auto;
+      // //   top: 13%;
+      // //   left: 2%;
+      // position: static;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
 
       .mobile-bg {
-        margin-left: 20%;
+        padding-left: 20%;
         height: 50%;
         width: 100%;
         display: inline-block;
@@ -152,13 +172,13 @@
 
       p {
         text-align: center;
-        width: 95%;
-        margin: 10% auto;
+        width: 90%;
+        margin: 10% auto 10% auto;
       }
 
       .cta-btn {
         width: 95%;
-        margin: 5% auto 10%;
+        margin: 3% auto 10%;
       }
     }
   }
@@ -174,13 +194,4 @@
     color: $icon-fontColor;
     padding: 0;
   }
-
 }
-// @media (min-width: 375px) and (max-width: 812px) {
-//   .nav h4 a.current {
-//     background: none;
-//     color: $icon-fontColor;
-//     padding: 0;
-  
-//   }
-// }

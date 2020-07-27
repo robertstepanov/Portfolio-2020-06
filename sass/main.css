@@ -28,6 +28,7 @@ body {
   left: 0;
   z-index: 1;
   background: #fff;
+  overflow: hidden;
 }
 
 .nav-container .logo {
@@ -71,6 +72,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     height: 120px;
+    position: relative;
   }
   .nav-container .logo {
     height: 75px;
@@ -168,13 +170,14 @@ body {
     margin: 0 auto;
   }
   .landing .hero-image {
-    display: none;
-    height: 100%;
+    margin: -250px auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    opacity: 0.5;
   }
   .landing .main-heading {
-    width: 95%;
-    margin: 10% auto;
-    position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -185,9 +188,13 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    left: 0;
+    top: 27%;
+    width: 100%;
+    margin: 0 auto;
   }
   .landing .main-heading .mobile-bg {
-    margin-left: 20%;
+    padding-left: 20%;
     height: 50%;
     width: 100%;
     display: inline-block;
@@ -197,12 +204,12 @@ body {
   }
   .landing .main-heading p {
     text-align: center;
-    width: 95%;
-    margin: 10% auto;
+    width: 90%;
+    margin: 10% auto 10% auto;
   }
   .landing .main-heading .cta-btn {
     width: 95%;
-    margin: 5% auto 10%;
+    margin: 3% auto 10%;
   }
 }
 
@@ -223,6 +230,28 @@ body {
 .about {
   height: 100%;
   background: #f3f2f0;
+  overflow: hidden;
+}
+
+.about #topBtn {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #434cc7;
+  color: var(--main-text-color);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity: 0.6;
+  z-index: 200;
+}
+
+.about #topBtn:hover {
+  background-color: #555;
 }
 
 .about .about-title {
@@ -274,7 +303,7 @@ body {
   padding-right: 70px;
 }
 
-.about .icon-container {
+.about .skills-container .skills .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,7 +321,7 @@ body {
   padding: 0 30px;
 }
 
-.about .icon-container .skill-icon {
+.about .skills-container .skills .icon-container .skill-icon {
   font-size: 3em;
   color: #2a2a2a;
 }
@@ -329,6 +358,7 @@ body {
   height: 100%;
   background-color: #fff;
   padding-bottom: 3%;
+  overflow: hidden;
 }
 
 .projects .projects-title {
@@ -379,7 +409,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 500px;
+  width: 45%;
   line-height: 1.4;
 }
 
@@ -463,11 +493,26 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 95% !important;
+    margin-top: 20px;
   }
   .projects .project-group .project-info .project-desc {
-    width: 75%;
-    margin: 0 auto;
+    width: 95%;
+    margin: 1% auto;
     text-align: center;
+  }
+  .projects .project-group .project-info .social-icons {
+    margin: 0 auto;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .projects .project-group .project-info .social-icons i {
+    padding-right: 0;
   }
   .projects .work-btn-container .work-btn {
     width: 90%;

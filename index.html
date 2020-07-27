@@ -68,7 +68,7 @@
       sizes="16x16"
       href="./images//favicon-16x16.png"
     />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/webmanifest.json" crossorigin="use-credentials"/>
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
@@ -78,6 +78,8 @@
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
+
+
     <header class="nav-container">
       <div class="logo">
         <img src="./images/navlogo.svg" alt="logo" class="logo" />
@@ -93,7 +95,7 @@
       <div class="hero-image"></div>
       <div class="main-heading">
         <h1 class="title">Welcome to my Portfolio</h1>
-        <img src="./images/road_1920x1080.png" alt="road" class="mobile-bg"/>
+        <!-- <img src="./images/road_1920x1080.png" alt="road" class="mobile-bg"/> -->
         <p>
           Hello, my name is Robert Stepanov and I'm on the road to Web
           Development success.
@@ -176,6 +178,9 @@
       </div>
       </div>
     </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <i class="fas fa-angle-up"></i>
+    </button>
     </section>
     <section class="projects" id="work">
       <h2 class="projects-title">Projects</h2>
